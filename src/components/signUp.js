@@ -73,7 +73,7 @@ export default function SignUp() {
       email,
       password,
     };
-    fetch("http://localhost:5000/users/add", {
+    fetch("https://osamanews.herokuapp.com/users/add", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

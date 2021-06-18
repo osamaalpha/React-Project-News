@@ -52,7 +52,7 @@ export const useProvideAuth = (email, password) => {
   const history = useHistory();
 
   const signInAuth = async () => {
-    const res = await fetch("http://localhost:5000/users");
+    const res = await fetch("https://osamanews.herokuapp.com/users");
     const data = await res.json();
     setLoading(false);
     data.forEach((userData) => {
