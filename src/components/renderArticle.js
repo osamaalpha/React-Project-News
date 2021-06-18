@@ -9,7 +9,6 @@ const RenderArticle = ({
   setData,
 }) => {
   const convert = (str) => str.replace("T", " ").replace("Z", " ");
-  console.log(data);
 
   return (
     <div>
