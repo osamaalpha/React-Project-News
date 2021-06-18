@@ -1,0 +1,5 @@
+[[redirects]]
+from:"https://deploy-preview-2--eloquent-kirch-114c4b.netlify.app/newsapi.org/*"
+to:"https://newsapi.org/:splat"
+status=200
+force=true
