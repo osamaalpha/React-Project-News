@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
+
+.App {
+  text-align: center;
+  background-color: white;
+}
+.home-header {
+  font-size: 40px;
+}
+
+.nav-style {
+  display: flex;
+  list-style: none;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-top: 0;
+}
+
+.nav-style-right {
+  display: flex;
+  padding: 0 2%;
+  margin-left: auto;
+}
+.nav-style-right a {
+  padding-left: 5%;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  padding-top: 4%;
+  padding-bottom: 1%;
+  font-weight: bold;
+}
+
+.each-slide div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-container {
+  width: 90%;
+  margin: 2% auto;
+}
+.slide-header {
+  font-size: 50px;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 7%;
+}
+.card-texts {
+  font-size: 20px;
+}
+.container {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 1s ease-in-out;
+  background-color: #91c9ff;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4f95da;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.search-form {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: solid black 1px;
+  padding: 2% 0;
+  margin-bottom: 2%;
+}
+.inputLabel {
+  margin: 1%;
+  font-size: 20px;
+  padding: 3% 0;
+  color: black;
+}
+.submit {
+  font-size: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  margin-top: 2%;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+.search-input {
+  line-height: 1.5em;
+}
+.search-key {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.article {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: solid black 1px;
+  width: 60%;
+  margin: 2% auto;
+}
+.articleImg {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.desc {
+  background-color: #f0f0f0;
+}
+.date {
+  border: 3px rgb(92, 92, 165) solid;
+  border-radius: 5px;
+  width: 20%;
+  margin: 2% auto;
+  background-color: rgb(141, 141, 183);
+}
+.delete-button {
+  margin-left: 95%;
+  margin-top: 1%;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+}
+.user-keys {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
