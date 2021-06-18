@@ -2,7 +2,7 @@ const userFavoriteKeys = async (searchKey, userID) => {
   const newUser = {
     searchKey,
   };
-  console.log(userID);
+
   if (searchKey !== "" || searchKey !== " ") {
     const res = await fetch(
       `https://osamanews.herokuapp.com/users/add/` + userID,
