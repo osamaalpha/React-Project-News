@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   root: {
     maxWidth: 345,
+    margin: 2 % 0,
   },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
