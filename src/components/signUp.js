@@ -12,6 +12,7 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { useHistory } from "react-router-dom";
 
 function Copyright() {
   return (
@@ -52,6 +53,7 @@ export default function SignUp() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const history = useHistory();
   const handleFirstName = (e) => {
     setFirstName(e.target.value);
   };
@@ -82,7 +84,7 @@ export default function SignUp() {
     })
       .then((res) => res.json())
       .then((data) => console.log(data));
-    window.location = "/signIn";
+    history.push("/signIn");
   };
 
   return (
