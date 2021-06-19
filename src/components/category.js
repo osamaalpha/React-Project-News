@@ -50,7 +50,7 @@ const Category = () => {
       category === "" || category === " " ? "" : "topic=" + category
     }${searchKey === "" || searchKey === " " ? "" : "&q=" + searchKey}${
       country === "" || country === " " ? "" : "&country=" + country
-    }&token=e54d3907fa19754f7d4671f943499cc4`
+    }&token=${API_KEY}`
   );
 
   return (
