@@ -10,8 +10,6 @@ import { useFetchApi, API_KEY } from "../helpers/usefetchApi";
 const GlobalNews = () => {
   const { handleSubmit, userID } = useContext(GlobalContext);
   const [searchKey, setSearchKey] = useState("");
-  const [newsPaper, setNewsPaper] = useState("");
-  const [excludePaper, setExcludePaper] = useState("");
   const [fromDate, setFromDate] = useState(null);
   const [toDate, setToDate] = useState(null);
   const [lang, setLang] = useState("");
@@ -23,12 +21,7 @@ const GlobalNews = () => {
   const handleSearchKey = (e) => {
     setSearchKey(e.target.value);
   };
-  const handleNewsPaper = (e) => {
-    setNewsPaper(e.target.value);
-  };
-  const handleExcludePaper = (e) => {
-    setExcludePaper(e.target.value);
-  };
+
   const handleFromDate = (e) => {
     setFromDate(e.target.value);
   };
