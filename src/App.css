@@ -198,5 +198,6 @@ svg {
   }
   .logo {
     width: 15%;
+    margin-left: 0;
   }
 }
