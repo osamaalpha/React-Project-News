@@ -46,11 +46,11 @@ const Category = () => {
     setIsLoading,
     validationError,
   ] = useFetchApi(
-    `https://newsapi.org/v2/top-headlines?${
-      category === "" || category === " " ? "" : "category=" + category
+    `https://gnews.io/api/v4/top-headlines?${
+      category === "" || category === " " ? "" : "topic=" + category
     }${searchKey === "" || searchKey === " " ? "" : "&q=" + searchKey}${
       country === "" || country === " " ? "" : "&country=" + country
-    }&apiKey=${API_KEY}`
+    }&token=${API_KEY}`
   );
 
   return (
@@ -65,12 +65,14 @@ const Category = () => {
         <select value={category} onChange={handleCategory} required>
           <option value="">Please select</option>
           <option>business</option>
-          <option>entertainment</option>
-          <option>general</option>
+          <option>breaking-news</option>
+          <option>world</option>
           <option>health</option>
           <option>science</option>
           <option>sports</option>
           <option>technology</option>
+          <option>entertainment</option>
+          <option>nation</option>
         </select>
         <label className="inputLabel">Country</label>
         <select value={country} onChange={handleCountry}>
