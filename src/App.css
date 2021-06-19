@@ -203,4 +203,7 @@ svg {
   .nav-style {
     padding-left: 0.5%;
   }
+  .article {
+    width: 90%;
+  }
 }
