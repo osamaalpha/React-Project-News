@@ -24,7 +24,7 @@
 ### Directory Layout and Tree
 
 ```
-.
+.                         # Front end part of application
 ├── package.json
 ├── package-lock.json
 ├── public
