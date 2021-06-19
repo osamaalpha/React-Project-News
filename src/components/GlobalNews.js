@@ -53,7 +53,7 @@ const GlobalNews = () => {
     setIsLoading,
     validationError,
   ] = useFetchApi(
-    `https://gnews.io/api/v4/everything?${
+    `https://gnews.io/api/v4/search?${
       searchKey === "" || searchKey === " " ? "" : "q=" + searchKey
     }${fromDate === "" || fromDate === " " ? "" : "&from=" + fromDate}${
       toDate === "" || toDate === " " ? "" : "&to=" + toDate
