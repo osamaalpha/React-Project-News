@@ -8,7 +8,7 @@ const Nav = () => {
       <img
         src="https://image.flaticon.com/icons/png/512/21/21601.png"
         alt="news log"
-        width="7%"
+        className="logo"
       />
 
       <div className="nav-style-right">
