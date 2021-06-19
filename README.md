@@ -1,4 +1,4 @@
-# Full Stack MERN Single Page App
+# Full Stack MERN Single Page App using Api <a href="https://gnews.io/">GNews</a>
 
 <img src="./newsimg.JPG">
 
@@ -17,7 +17,7 @@
 
 ## Demo The web is hosted by heroku(Backend) , Netlify(Frontend)
 
-<h4><a href="https://eloquent-kirch-114c4b.netlify.app/">News</a></h4>
+<h3><a href="https://eloquent-kirch-114c4b.netlify.app/">News</a></h3>
 
 ### Directory Layout and Tree
 
@@ -106,4 +106,4 @@
 
 ```
 
-# Note Max requests 10 per day
+# Note Max requests 10 per day for the Api
