@@ -1,10 +1,10 @@
 # Full Stack MERN Single Page App using Api <a href="https://gnews.io/">GNews</a>
 
 <img src="./newsimg.JPG">
+ 
+# <a href="https://github.com/osamaalpha/React-Project-News-Backend">Backend repo</a>
 
 <h4>The SPA with 6 pages (routes):<h4>
-
-# <a href="https://github.com/osamaalpha/React-Project-News-Backend">Backend repo</a>
 
 <ul>
 <li>A Homepage to ask Signin to the application,</li>
