@@ -53,17 +53,13 @@ const GlobalNews = () => {
     setIsLoading,
     validationError,
   ] = useFetchApi(
-    `https://newsapi.org/v2/everything?${
+    `https://gnews.io/api/v4/everything?${
       searchKey === "" || searchKey === " " ? "" : "q=" + searchKey
-    }${newsPaper === "" || newsPaper === " " ? "" : "&domains=" + newsPaper}${
-      excludePaper === "" || excludePaper === " "
-        ? ""
-        : "&excludeDomains=" + excludePaper
     }${fromDate === "" || fromDate === " " ? "" : "&from=" + fromDate}${
       toDate === "" || toDate === " " ? "" : "&to=" + toDate
-    }${lang === "" || lang === " " ? "" : "&language=" + lang}${
-      sort === "" || sort === " " ? "" : "&sortBy=" + sort
-    }&apiKey=${API_KEY}`
+    }${lang === "" || lang === " " ? "" : "&lang=" + lang}${
+      sort === "" || sort === " " ? "" : "&sortby=" + sort
+    }&token=${API_KEY}`
   );
 
   const [
@@ -75,9 +71,7 @@ const GlobalNews = () => {
     setIsLoadingKey,
     validationErrorKey,
   ] = useFetchApiUserKey(
-    `https://newsapi.org/v2/everything?${
-      "q=" + userSearchKey
-    }&apiKey=${API_KEY}`
+    `https://gnews.io/api/v4/search?${"q=" + userSearchKey}&token=${API_KEY}`
   );
   const handleKeySearch = (e) => {
     setUserSearchKey(e.target.innerText);
@@ -123,20 +117,6 @@ const GlobalNews = () => {
           required
         />
 
-        <label className="inputLabel">News Paper</label>
-        <input
-          className="search-input"
-          value={newsPaper}
-          placeholder="News Paper"
-          onChange={handleNewsPaper}
-        />
-        <label className="inputLabel">Exclude News Paper</label>
-        <input
-          className="search-input"
-          value={excludePaper}
-          placeholder="Exclude Paper"
-          onChange={handleExcludePaper}
-        />
         <br />
         <label className="inputLabel ">from</label>
         <input
@@ -173,7 +153,6 @@ const GlobalNews = () => {
         <label className="inputLabel">Sorted By</label>
         <select className="search-input" value={sort} onChange={handleSort}>
           <option>relevancy</option>
-          <option>popularity</option>
           <option>publishedAt</option>
         </select>
         <br />

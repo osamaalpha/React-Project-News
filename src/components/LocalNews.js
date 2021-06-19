@@ -43,11 +43,11 @@ const LocalNews = () => {
     setIsLoading,
     validationError,
   ] = useFetchApi(
-    `https://newsapi.org/v2/top-headlines?${
+    `https://gnews.io/api/v4/top-headlines?${
       country === "" || country === " " ? "" : "country=" + country
     }${
       searchKey === "" || searchKey === " " ? "" : "&q=" + searchKey
-    }&apiKey=${API_KEY}`
+    }&token=${API_KEY}`
   );
 
   return (

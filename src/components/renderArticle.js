@@ -29,14 +29,13 @@ const RenderArticle = ({
                   >
                     X
                   </button>
-                  <h3>{article.author}</h3>
                   <h1>{article.title}</h1>
                   <p>{article.source.name}</p>
                   <h5 className="desc">{article.description}</h5>
                   <img
                     className="articleImg"
                     width="40%"
-                    src={article.urlToImage}
+                    src={article.image}
                     alt={article.description}
                   />
                   <p className="date">{convert(article.publishedAt)}</p>
